@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+*{
+    font-family: "Kalam", cursive;
+    padding: 0; margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+html{
+    overflow: hidden;
+    font-size: 62.5%;
+}
+
+body{
+    background: #333;
+}
+header{
+    width: 96%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 1.5rem; left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5rem;
+    box-shadow: 0 .3rem .5rem rgb(0,0,0,.3);
+    padding: 3rem 2rem;
+    transition: 2s linear;
+    z-index: 1000;
+}
+
+header .logo{
+    color: #333;
+    font-size: 3rem;
+}
+
+header .logo span{
+    color: #0098a1;
+}
+
+header .navbar ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0; padding: 0;
+}
+
+header .navbar ul li{
+    margin: 0 1rem;
+}
+
+header .navbar ul li a{
+    font-size: 2rem;
+    color: #333;
+    transition: 2s linear;
+}
+
+
+header .navbar ul li .active,
+header .navbar ul li a:hover{
+    color: #0098a1;
+}
+
+header .fa-bar{
+    font-size: 3rem;
+    color: #0098a1;
+    cursor: pointer;
+    display: none;
+}
