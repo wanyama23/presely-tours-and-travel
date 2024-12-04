@@ -9,9 +9,31 @@
     text-transform: capitalize;
 }
 
-html{
+/* html{
     overflow: hidden;
     font-size: 62.5%;
+} */
+
+
+body, html{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+.heading{
+    color: #333;
+    font-size: 3.5rem;
+    padding: 1rem;
+    padding-top: 6rem;
+    text-align: center;
+    letter-spacing: 2rem;
+}
+
+.heading span{
+    color: #0098a1;
 }
 
 /* body{
@@ -144,14 +166,143 @@ header .fa-bars{
     text-align: center;
 }
 
-/* .home { position: relative; width: 100%; height: 100vh; overflow: hidden; } .video { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; object-fit: cover; } .video video { width: 100%; height: 100%; object-fit: cover; } .content { position: relative; z-index: 1; display: flex; justify-content: center; align-items: center; height: 100%; color: white; text-align: center; } */
+.home .form-container form span{
+    color: #0098a1;
+    font-size: 2.5rem;
+    margin: .5rem 0;
+    display: block;
+}
+
+.home .form-container form input[type="submit"]{
+    width: 10rem;
+    color: #fff;
+    background: #0098a1;
+    cursor: pointer;
+    font-size: 2rem;
+    margin-top: 2rem;
+    transition: .2s linear;
+}
+
+.home .form-container form input[type="submit"]:hover{
+    border: 2rem solid #0098a1;
+    color: #0098a1;
+    background: none;
+}
+
+.features{
+    height: 100vh;
+    background: #f9f9f9;
+}
+
+.features .card-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.features .card-container .card{
+    width: 30rem;
+    margin: 2rem;
+    background: #fff;
+    border-radius: .5rem;
+    box-shadow: 0 .3rem .5rem rgb(0,0,0,.3);
+    overflow: hidden;
+    position: relative;
+}
+
+.features .card-container .card img{
+    height: 25rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.features .card-container .content{
+    padding: 2rem;
+    text-align: center;
+}
+
+.features .card-container .content .title{
+    color: #0098a1;
+    font-size: 3rem;
+}
+
+.features .card-container .content p{
+    color: #333;
+    font-size: 1.3rem;
+    padding: 1rem;
+}
+
+.features .card-container .content .stars i{
+    padding: 0 .2rem;
+    font-size: 2rem;
+    color: gold;
+}
+
+.features .card-container .content .btn{
+    font-size: 1.7rem;
+    margin-top: 1.4rem;
+    height: 3.5rem;
+    width: 12rem;
+    border-radius: .5rem;
+    outline: none;
+    background: #0098a1;
+    color: #fff;
+    cursor: pointer;
+}
+
+.features .card-container .content .btn:hover{
+    background: none;
+    border: 2rem solid #0098a1;
+    color: #0098a1;
+}
+
+.features .card-container .card .discount{
+    position: absolute;
+    top: 1rem; left: 1rem;
+    display: block;
+    height: 3.5rem;
+    width: 6rem;
+    background: #ff3300;
+    color: #fff;
+    line-height: 4rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+
+
+
+
+/* body, html { margin: 0; padding: 0; width: 100%; height: 100%; overflow-x: hidden; } .home { position: relative; width: 100%; height: 100vh; overflow: hidden; } .video { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; } .video video { width: 100%; height: 100%; object-fit: cover; } .content { position: relative; z-index: 1; text-align: center; color: white; padding: 20px; } .form-container { position: relative; z-index: 1; background: rgba(0, 0, 0, 0.5); padding: 20px; margin-top: 20px; } .form-container form { display: flex; flex-direction: column; } .form-container span, .form-container input, .form-container h3 { color: white; margin-bottom: 10px; } .features { padding: 20px; background: #f4f4f4; } .heading { text-align: center; margin-bottom: 40px; } .card-container { display: flex; justify-content: space-around; flex-wrap: wrap; } .card { background: white; padding: 20px; margin: 10px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); width: 30%; position: relative; } .card img { width: 100%; } .card .discount { position: absolute; top: 10px; left: 10px; background: red; color: white; padding: 5px; } .card .content { margin-top: 10px; } .card .content .title { margin: 10px 0; } .stars { color: gold; } .btn { background: blue; color: white; padding: 10px; border: none; cursor: pointer; }.home { position: relative; width: 100%; height: 100vh; overflow: hidden; } .video { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; object-fit: cover; } .video video { width: 100%; height: 100%; object-fit: cover; } .content { position: relative; z-index: 1; display: flex; justify-content: center; align-items: center; height: 100%; color: white; text-align: center; } */
 
 
 
 
 
 
+@media (max-width:991px){
+    .home{
+        flex-flow: column;
+        padding: 1.5rem;
+    }
 
+    .home .content{
+        text-align: center;
+    }
+
+    .home .content h1{
+        font-size: 5.5rem;
+    }
+
+    .home .content p{
+        font-size: 1.8rem;
+        padding: 0;
+        border: none;
+    }
+
+}
 
 @media (max-width:768px){
     html{
@@ -187,5 +338,20 @@ header .fa-bars{
     header .nav-toggle{
         top: 5.5rem;
         opacity: 1;
+    }
+}
+
+@media (max-width:500px){
+    .home .form-container{
+        width: 100%;
+    }
+
+    .home .form-container form{
+        width: 100%;
+        margin: 3rem 0;
+    }
+
+    .home .form-container form input[type="submit"]{
+        width: 100%;
     }
 }
