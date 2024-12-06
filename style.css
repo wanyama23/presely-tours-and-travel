@@ -688,6 +688,20 @@ header .fa-bars{
         opacity: 1;
     }
 
+    /* .menu-icon{
+        display: block;
+    }
+
+    .navbar ul{
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar ul.active{
+        display: flex;
+    } */
+
     .about .row{
         flex-flow: column;
     }
